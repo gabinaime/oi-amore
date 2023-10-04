@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Time</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #result-box {
+            background-color: lightpink;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        #dating-time {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>acertou amorzinho! eu te amo tanto que até aprendi HTML, CSS e JavaScript pra você! mentira, foi tudo o chat gpt, mas vou te distrair dessa infromação com uma caixinha que mostra quanto dias estamos juntos!</h1>
+
+    <div id="result-box">
+        <p id="dating-time">Calculating...</p>
+    </div>
+
+    <script>
+        // Calculate and display the dating time
+        function calculateDatingTime() {
+            var startDate = new Date("2022-11-27"); // Replace with your actual start date
+            var currentDate = new Date();
+
+            var timeDifference = currentDate - startDate;
+            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+            document.getElementById("dating-time").textContent = "uau! a gente namora faz " + days + " dias! caralho!";
+        }
+
+        // Call the function when the page is loaded
+        calculateDatingTime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voce mim ama? se responder corretamente revela uma mensagem secreta...</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>voce mim ama?</h1>
+
+    <button onclick="checkAnswer(true)">Yes</button>
+    <button onclick="checkAnswer(false)">No</button>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer) {
+                // If 'Yes' is clicked, redirect to the dating time page
+                window.location.href = "acertou.html";
+            } else {
+                // If 'No' is clicked, show an error message
+                alert("errou vaida! ta me traindo com quem? tenta de novo.");
+            }
+        }
+    </script>
+</body>
+</html>
